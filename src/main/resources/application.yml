@@ -1,0 +1,19 @@
+server:
+  port: 8099
+spring:
+  application:
+    name: older_home_springboot
+  datasource:
+    url: jdbc:mysql://localhost:3306/olderhome?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    username: root
+    password: renhao1780386..
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  devtools: #热部署配置
+    restart:
+      enabled: true
+      additional-paths:
+        - src/main/java
+  jpa:
+    #    hibernate:
+    #      ddl-auto: update
+    show-sql: true
