@@ -17,3 +17,7 @@ spring:
     #    hibernate:
     #      ddl-auto: update
     show-sql: true
+  cache:
+    type: caffeine
+    caffeine:
+      spec: maximumSize=10000,expireAfterWrite=60s,initialCapacity=50
